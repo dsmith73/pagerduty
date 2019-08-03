@@ -3,7 +3,7 @@
 resource "pagerduty_user" "grimlock" {
   name = "Grimlock"
   email = "grimlock@transformers.com"
-  color = "white"
+  color = "dark-green"
   role = "user"
   job_title = "Dinosaur"
   teams = ["${pagerduty_team.autobots.id}", "${pagerduty_team.transformers.id}"]
@@ -11,15 +11,15 @@ resource "pagerduty_user" "grimlock" {
 resource "pagerduty_user" "optimus_prime" {
   name = "Optimus Prime"
   email = "optimusprime@transformers.com"
-  color = "white"
-  role = "manager"
+  color = "dark-red"
+  role = "admin"
   job_title = "Freightliner FL-86"
   teams = ["${pagerduty_team.autobots.id}", "${pagerduty_team.transformers.id}"]
 }
 resource "pagerduty_user" "ironhide" {
   name = "Ironhide"
   email = "ironhide@transformers.com"
-  color = "white"
+  color = "midnight-blue"
   role = "user"
   job_title = "Nissan Vanette"
   teams = ["${pagerduty_team.autobots.id}", "${pagerduty_team.transformers.id}"]
@@ -27,7 +27,7 @@ resource "pagerduty_user" "ironhide" {
 resource "pagerduty_user" "bumblebee" {
   name = "Bumblebee"
   email = "bumblebee@transformers.com"
-  color = "yellow"
+  color = "orange"
   role = "user"
   job_title = "Soldier"
   teams = ["${pagerduty_team.autobots.id}", "${pagerduty_team.transformers.id}"]
