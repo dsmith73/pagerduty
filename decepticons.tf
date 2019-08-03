@@ -24,3 +24,11 @@ resource "pagerduty_user" "buzzsaw" {
   job_title = "Cassette Tape"
   teams = ["${pagerduty_team.decepticons.id}", "${pagerduty_team.transformers.id}"]
 }
+resource "pagerduty_user" "megatron" {
+  name = "Megatron"
+  email = "megatron@transformers.com"
+  color = "black"
+  role = "user"
+  job_title = "Evil Genius"
+  teams = ["${pagerduty_team.decepticons.id}", "${pagerduty_team.transformers.id}"]
+}

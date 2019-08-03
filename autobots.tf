@@ -24,3 +24,20 @@ resource "pagerduty_user" "ironhide" {
   job_title = "Nissan Vanette"
   teams = ["${pagerduty_team.autobots.id}", "${pagerduty_team.transformers.id}"]
 }
+resource "pagerduty_user" "bumblebee" {
+  name = "Bumblebee"
+  email = "bumblebee@transformers.com"
+  color = "yellow"
+  role = "user"
+  job_title = "Soldier"
+  teams = ["${pagerduty_team.autobots.id}", "${pagerduty_team.transformers.id}"]
+}
+
+resource "pagerduty_user" "cliffjumper" {
+  name = "Cliffjumper"
+  email = "cliffjumper@transformers.com"
+  color = "red"
+  role = "user"
+  job_title = "Soldier"
+  teams = ["${pagerduty_team.autobots.id}", "${pagerduty_team.transformers.id}"]
+}
