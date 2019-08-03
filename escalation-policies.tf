@@ -15,7 +15,7 @@ resource "pagerduty_escalation_policy" "autobots-esc-policy" {
     escalation_delay_in_minutes = 15
     target {
       type = "user_reference"
-      id = "${pagerduty_user.optimus.id}"
+      id = "${pagerduty_user.optimus_prime.id}"
     }
   }
 }
