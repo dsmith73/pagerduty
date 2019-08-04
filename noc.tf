@@ -3,7 +3,6 @@
 resource "pagerduty_user" "kalyan_kota" {
   name = "kalyan kota"
   email = "kalyan@kar.com"
-  color = "forest-green"
   role = "admin"
   job_title = "NOC"
   teams = ["${pagerduty_team.noc.id}"]
@@ -12,7 +11,6 @@ resource "pagerduty_user" "kalyan_kota" {
 resource "pagerduty_user" "vamsi_g" {
   name = "vamsi g"
   email = "vamsi.g@kkar.com"
-  color = "lime"
   role = "admin"
   job_title = "NOC"
   teams = ["${pagerduty_team.noc.id}"]
@@ -20,7 +18,6 @@ resource "pagerduty_user" "vamsi_g" {
 resource "pagerduty_user" "babjan_b" {
   name = "babjan b"
   email = "babjan@kar.com"
-  color = "dark-red"
   role = "admin"
   job_title = "NOC"
   teams = ["${pagerduty_team.noc.id}"]
@@ -28,8 +25,18 @@ resource "pagerduty_user" "babjan_b" {
 resource "pagerduty_user" "rincy" {
   name = "rincy"
   email = "rincy@kar.com"
-  color = "blue"
   role = "admin"
   job_title = "NOC"
   teams = ["${pagerduty_team.noc.id}"]
 }
+
+/* Possible reformat of users
+module "user_calvin_wong" {
+  source    = "../../modules/pagerduty/user"
+  name      = "TF Test - Calvin"
+  email     = "YOUR_EMAIL_HERE"
+  mobile    = "YOUR_MOBILE_HERE"
+  job_title = "SRE"
+  teams     = "${pagerduty_team.pd_team_techops.id}"
+}
+*/
