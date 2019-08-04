@@ -1,10 +1,10 @@
 /*    noc.tf    */
 
-resource "pagerduty_user" "dan_smith" {
-  name = "dan smith"
-  email = "dsmith73@gmail.com"
+resource "pagerduty_user" "dan_s" {
+  name = "dan s"
+  email = "dan_s@kar.com"
   color = "dark-slate-blue"
-  role = "owner"
+  role = "admin"
   job_title = "NOC"
   teams = ["${pagerduty_team.noc-na.id}"]
 }
@@ -12,7 +12,7 @@ resource "pagerduty_user" "dan_smith" {
 resource "pagerduty_user" "nate_crisler" {
   name = "nate crisler"
   email = "nathan.crisler@kkar.com"
-  color = "dark-blue"
+  color = "dark-orange"
   role = "admin"
   job_title = "NOC"
   teams = ["${pagerduty_team.noc-na.id}"]
