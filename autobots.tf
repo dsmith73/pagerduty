@@ -3,7 +3,6 @@
 resource "pagerduty_user" "grimlock" {
   name = "Grimlock"
   email = "grimlock@transformers.com"
-  mobile = "1-317-430-8904"
   color = "dark-green"
   role = "user"
   job_title = "Dinosaur"

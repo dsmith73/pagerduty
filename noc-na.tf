@@ -5,7 +5,6 @@ resource "pagerduty_user" "dan_smith" {
   email = "dsmith73@gmail.com"
   color = "dark-slate-blue"
   role = "owner"
-  tags = "mgr, ops, svceng, app, infra"
   job_title = "NOC"
   teams = ["${pagerduty_team.noc-na.id}"]
 }
