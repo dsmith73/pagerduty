@@ -29,6 +29,13 @@ resource "pagerduty_user" "rincy" {
   job_title = "NOC"
   teams = ["${pagerduty_team.noc.id}"]
 }
+  resource "pagerduty_user" "ramki" {
+  name = "ramki"
+  email = "ramki@kar.com"
+  role = "admin"
+  job_title = "NOC"
+  teams = ["${pagerduty_team.noc.id}"]
+}
 
 /* Possible reformat of users
 module "user_calvin_wong" {

@@ -8,7 +8,6 @@ resource "pagerduty_user" "dan_s" {
   job_title = "NOC"
   teams = ["${pagerduty_team.noc-na.id}"]
 }
-
 resource "pagerduty_user" "nate_crisler" {
   name = "nate crisler"
   email = "nathan.crisler@kkar.com"
