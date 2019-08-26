@@ -48,3 +48,11 @@ resource "pagerduty_user" "hemanth_shivanna" {
   job_title = "NOC"
   teams = ["${pagerduty_team.noc-na.id}"]
 }
+resource "pagerduty_user" "rahul_k" {
+  name = "rahul karav"
+  email = "rahul.k@kar.com"
+  color = "purple"
+  role = "user"
+  job_title = "NOC"
+  teams = ["${pagerduty_team.noc-na.id}"]
+}
